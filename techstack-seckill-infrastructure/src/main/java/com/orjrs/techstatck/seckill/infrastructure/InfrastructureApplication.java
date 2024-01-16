@@ -1,17 +1,13 @@
-package orjrs.techstack.seckill.application;
+package com.orjrs.techstatck.seckill.infrastructure;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * 启动应用层
- * @author orjrs
- */
 @SpringBootApplication
-public class Application {
+public class InfrastructureApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(InfrastructureApplication.class, args);
     }
 
 }

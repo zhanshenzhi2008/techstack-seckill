@@ -38,7 +38,7 @@
 							<goal>repackage</goal>
 						</goals>
 						<configuration>
-							<mainClass>com.orjrs.techstack.seckill.starter.StarterApplication</mainClass>
+							<mainClass>com.orjrs.techstatck.seckill.starter.StarterApplication</mainClass>
 						</configuration>
 					</execution>
 				</executions>
