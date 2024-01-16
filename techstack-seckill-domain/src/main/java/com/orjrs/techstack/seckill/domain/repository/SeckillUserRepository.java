@@ -13,29 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.orjrs.techstack.seckill.application.service.impl;
+package com.orjrs.techstack.seckill.domain.repository;
 
-import com.orjrs.techstack.seckill.application.service.SeckillUserService;
-import com.orjrs.techstack.seckill.domain.repository.SeckillUserRepository;
 import com.orjrs.techstack.seckill.domain.model.SeckillUser;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * @author binghe(微信 : hacker_binghe)
  * @version 1.0.0
- * @description 用户Service
+ * @description 用户
  * @github https://github.com/binghe001
  * @copyright 公众号: 冰河技术
  */
-@Service
-public class SeckillUserServiceImpl implements SeckillUserService {
-    @Autowired
-    private SeckillUserRepository seckillUserRepository;
+public interface SeckillUserRepository {
 
-
-    @Override
-    public SeckillUser getSeckillUserByUserName(String userName) {
-        return seckillUserRepository.getSeckillUserByUserName(userName);
-    }
+    /**
+     * 根据用户名获取用户信息
+     */
+    SeckillUser getSeckillUserByUserName(String userName);
 }

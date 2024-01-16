@@ -13,29 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.orjrs.techstack.seckill.application.service.impl;
+package com.orjrs.techstack.seckill.domain.model;
 
-import com.orjrs.techstack.seckill.application.service.SeckillUserService;
-import com.orjrs.techstack.seckill.domain.repository.SeckillUserRepository;
-import com.orjrs.techstack.seckill.domain.model.SeckillUser;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * @author binghe(微信 : hacker_binghe)
  * @version 1.0.0
- * @description 用户Service
+ * @description 用户信息
  * @github https://github.com/binghe001
  * @copyright 公众号: 冰河技术
  */
-@Service
-public class SeckillUserServiceImpl implements SeckillUserService {
-    @Autowired
-    private SeckillUserRepository seckillUserRepository;
-
-
-    @Override
-    public SeckillUser getSeckillUserByUserName(String userName) {
-        return seckillUserRepository.getSeckillUserByUserName(userName);
-    }
+@Data
+public class SeckillUser implements Serializable {
+    private static final long serialVersionUID = -3004624289691589697L;
+    //用户id
+    private Long id;
+    //用户名
+    private String userName;
+    //密码
+    private String password;
+    //1：正常；2：冻结
+    private Integer status;
 }
