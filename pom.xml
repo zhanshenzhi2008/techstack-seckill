@@ -11,13 +11,13 @@
     <name>techstack-seckill</name>
     <description>秒杀系统</description>
     <modules>
-<!--        <module>techstack-seckill-application</module>-->
+        <module>techstack-seckill-application</module>
         <module>techstack-seckill-domain</module>
-<!--        <module>techstack-seckill-infrastructure</module>-->
-<!--        <module>techstack-seckill-interfaces</module>-->
-<!--        <module>techstack-seckill-nginx</module>-->
-<!--        <module>techstack-seckill-starter</module>-->
-    </modules>
+        <module>techstack-seckill-infrastructure</module>
+        <module>techstack-seckill-interfaces</module>
+        <!--<module>techstack-seckill-nginx</module>-->
+        <module>techstack-seckill-starter</module>
+     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
